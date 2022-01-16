@@ -134,8 +134,6 @@ namespace PointsRotate
 
                 sumPointsCount += r.pointsCount;
 
-                //if (maxT < r.t)
-                //    maxT = r.t;
             }
 
             double totalT = (this.totalEndTime - this.totalBeginTime).TotalMilliseconds;
