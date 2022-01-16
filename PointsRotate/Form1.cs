@@ -42,11 +42,9 @@ namespace PointsRotate
                     CreatePoints(this.pointsCount);
                 }
 
-                
 
                 Rotate();
 
-                
             }
             catch(Exception ex)
             {
@@ -145,12 +143,9 @@ namespace PointsRotate
             sb.Append("合计 ： " + this.resultList.Count + " 线程 执行三维旋转 共 " + sumPointsCount + " 个点， 耗时 ： " + totalT + " 毫秒， "
                 + "每秒可执行 " + 1000D / totalT + " 次\r\n\r\n");
 
-           
 
             WriteMsg(sb.ToString());
 
-            //WriteMsg("HashTable 开始时间：" + beginTime.ToString("HH:mm:ss.fff") + " 结束时间：" + endTime.ToString("HH:mm:ss.fff")
-            //    + " 耗时：" + t + " 毫秒，执行 三维旋转 " + pointsCount + " 个点，每秒可执行 " + 1000 / t + " 次 。");
         }
 
         private void CreatePoints(int pointsCount)
